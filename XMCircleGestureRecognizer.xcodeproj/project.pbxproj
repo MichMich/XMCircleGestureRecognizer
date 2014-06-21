@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CA4B7611954CE1300377C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B7601954CE1300377C13 /* AppDelegate.swift */; };
+		4CA4B7631954CE1300377C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B7621954CE1300377C13 /* ViewController.swift */; };
+		4CA4B7661954CE1300377C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4B7641954CE1300377C13 /* Main.storyboard */; };
+		4CA4B7681954CE1300377C13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4B7671954CE1300377C13 /* Images.xcassets */; };
+		4CA4B7741954CE1400377C13 /* XMCircleGestureRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B7731954CE1400377C13 /* XMCircleGestureRecognizerTests.swift */; };
+		4CA4B77E1954CE6000377C13 /* XMCircleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B77D1954CE6000377C13 /* XMCircleGestureRecognizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CA4B76E1954CE1400377C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA4B7531954CE1300377C13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CA4B75A1954CE1300377C13;
+			remoteInfo = XMCircleGestureRecognizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CA4B75B1954CE1300377C13 /* XMCircleGestureRecognizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMCircleGestureRecognizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA4B75F1954CE1300377C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA4B7601954CE1300377C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CA4B7621954CE1300377C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CA4B7651954CE1300377C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CA4B7671954CE1300377C13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CA4B76D1954CE1400377C13 /* XMCircleGestureRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMCircleGestureRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CA4B7721954CE1400377C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CA4B7731954CE1400377C13 /* XMCircleGestureRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizerTests.swift; sourceTree = "<group>"; };
+		4CA4B77D1954CE6000377C13 /* XMCircleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizer.swift; sourceTree = "<group>"; };
+		4CA4B7B71956083100377C13 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "XMCircleGestureRecognizer/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CA4B7581954CE1300377C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA4B76A1954CE1400377C13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CA4B7521954CE1300377C13 = {
+			isa = PBXGroup;
+			children = (
+				4CA4B75D1954CE1300377C13 /* XMCircleGestureRecognizer */,
+				4CA4B7701954CE1400377C13 /* XMCircleGestureRecognizerTests */,
+				4CA4B75C1954CE1300377C13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CA4B75C1954CE1300377C13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CA4B75B1954CE1300377C13 /* XMCircleGestureRecognizer.app */,
+				4CA4B76D1954CE1400377C13 /* XMCircleGestureRecognizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CA4B75D1954CE1300377C13 /* XMCircleGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				4CA4B7B71956083100377C13 /* Bridging-Header.h */,
+				4CA4B7601954CE1300377C13 /* AppDelegate.swift */,
+				4CA4B7621954CE1300377C13 /* ViewController.swift */,
+				4CA4B7641954CE1300377C13 /* Main.storyboard */,
+				4CA4B7671954CE1300377C13 /* Images.xcassets */,
+				4CA4B75E1954CE1300377C13 /* Supporting Files */,
+				4CA4B77D1954CE6000377C13 /* XMCircleGestureRecognizer.swift */,
+			);
+			path = XMCircleGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		4CA4B75E1954CE1300377C13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CA4B75F1954CE1300377C13 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CA4B7701954CE1400377C13 /* XMCircleGestureRecognizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CA4B7731954CE1400377C13 /* XMCircleGestureRecognizerTests.swift */,
+				4CA4B7711954CE1400377C13 /* Supporting Files */,
+			);
+			path = XMCircleGestureRecognizerTests;
+			sourceTree = "<group>";
+		};
+		4CA4B7711954CE1400377C13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CA4B7721954CE1400377C13 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CA4B75A1954CE1300377C13 /* XMCircleGestureRecognizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA4B7771954CE1400377C13 /* Build configuration list for PBXNativeTarget "XMCircleGestureRecognizer" */;
+			buildPhases = (
+				4CA4B7571954CE1300377C13 /* Sources */,
+				4CA4B7581954CE1300377C13 /* Frameworks */,
+				4CA4B7591954CE1300377C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMCircleGestureRecognizer;
+			productName = XMCircleGestureRecognizer;
+			productReference = 4CA4B75B1954CE1300377C13 /* XMCircleGestureRecognizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CA4B76C1954CE1400377C13 /* XMCircleGestureRecognizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CA4B77A1954CE1400377C13 /* Build configuration list for PBXNativeTarget "XMCircleGestureRecognizerTests" */;
+			buildPhases = (
+				4CA4B7691954CE1400377C13 /* Sources */,
+				4CA4B76A1954CE1400377C13 /* Frameworks */,
+				4CA4B76B1954CE1400377C13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CA4B76F1954CE1400377C13 /* PBXTargetDependency */,
+			);
+			name = XMCircleGestureRecognizerTests;
+			productName = XMCircleGestureRecognizerTests;
+			productReference = 4CA4B76D1954CE1400377C13 /* XMCircleGestureRecognizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CA4B7531954CE1300377C13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Michael Teeuw";
+				TargetAttributes = {
+					4CA4B75A1954CE1300377C13 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					4CA4B76C1954CE1400377C13 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 4CA4B75A1954CE1300377C13;
+					};
+				};
+			};
+			buildConfigurationList = 4CA4B7561954CE1300377C13 /* Build configuration list for PBXProject "XMCircleGestureRecognizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CA4B7521954CE1300377C13;
+			productRefGroup = 4CA4B75C1954CE1300377C13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CA4B75A1954CE1300377C13 /* XMCircleGestureRecognizer */,
+				4CA4B76C1954CE1400377C13 /* XMCircleGestureRecognizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CA4B7591954CE1300377C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA4B7661954CE1300377C13 /* Main.storyboard in Resources */,
+				4CA4B7681954CE1300377C13 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA4B76B1954CE1400377C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CA4B7571954CE1300377C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA4B7631954CE1300377C13 /* ViewController.swift in Sources */,
+				4CA4B7611954CE1300377C13 /* AppDelegate.swift in Sources */,
+				4CA4B77E1954CE6000377C13 /* XMCircleGestureRecognizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CA4B7691954CE1400377C13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CA4B7741954CE1400377C13 /* XMCircleGestureRecognizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CA4B76F1954CE1400377C13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CA4B75A1954CE1300377C13 /* XMCircleGestureRecognizer */;
+			targetProxy = 4CA4B76E1954CE1400377C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CA4B7641954CE1300377C13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CA4B7651954CE1300377C13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CA4B7751954CE1400377C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4CA4B7761954CE1400377C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CA4B7781954CE1400377C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = XMCircleGestureRecognizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMCircleGestureRecognizer/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CA4B7791954CE1400377C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = XMCircleGestureRecognizer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMCircleGestureRecognizer/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4CA4B77B1954CE1400377C13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XMCircleGestureRecognizer.app/XMCircleGestureRecognizer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XMCircleGestureRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		4CA4B77C1954CE1400377C13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XMCircleGestureRecognizer.app/XMCircleGestureRecognizer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XMCircleGestureRecognizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CA4B7561954CE1300377C13 /* Build configuration list for PBXProject "XMCircleGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA4B7751954CE1400377C13 /* Debug */,
+				4CA4B7761954CE1400377C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CA4B7771954CE1400377C13 /* Build configuration list for PBXNativeTarget "XMCircleGestureRecognizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA4B7781954CE1400377C13 /* Debug */,
+				4CA4B7791954CE1400377C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CA4B77A1954CE1400377C13 /* Build configuration list for PBXNativeTarget "XMCircleGestureRecognizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CA4B77B1954CE1400377C13 /* Debug */,
+				4CA4B77C1954CE1400377C13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CA4B7531954CE1300377C13 /* Project object */;
+}
