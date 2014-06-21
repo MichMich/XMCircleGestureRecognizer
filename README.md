@@ -44,7 +44,7 @@ If you like to transform the values from radians to degrees, simply add ```.rad2
 
 ## So what does it look like?
 
-Check out this [example movie](Screenshots/example.mov).
+Check out this [example movie](https://raw.githubusercontent.com/MichMich/XMCircleGestureRecognizer/master/Screenshots/example.mov).
 
 ## Disclaimer
 
