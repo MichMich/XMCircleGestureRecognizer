@@ -39,6 +39,8 @@ class ViewController: UIViewController {
         feedbackLabel.textAlignment = .Center
         feedbackLabel.numberOfLines = 0;
         feedbackLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
+        
+        view.backgroundColor = UIColor(white: 0.9, alpha: 1)
     }
 
     
