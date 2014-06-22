@@ -36,10 +36,10 @@ Add a gesture responder function to your target to respond to the gesture:
         }
     }
     
-If you like to transform the values from radians to degrees, simply add ```.rad2deg``` to the variable:
+If you like to transform the values from radians to degrees, simply add ```.degrees``` to the variable:
 
     if let rotation = recognizer.rotation {
-        // rotation.rad2deg is the relative rotation for the current gesture in degrees
+        // rotation.degrees is the relative rotation for the current gesture in degrees
     }
 
 ## So what does it look like?

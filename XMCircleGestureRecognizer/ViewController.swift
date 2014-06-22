@@ -39,8 +39,6 @@ class ViewController: UIViewController {
         feedbackLabel.textAlignment = .Center
         feedbackLabel.numberOfLines = 0;
         feedbackLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
-        
-        view.backgroundColor = UIColor(white: 0.9, alpha: 1)
     }
 
     
@@ -49,12 +47,12 @@ class ViewController: UIViewController {
         feedbackLabel.text = ""
         
         if let rotation = recognizer.rotation {
-            currentValue += rotation.rad2deg / 360 * 100
+            currentValue += rotation.degrees / 360 * 100
             feedbackLabel.text = feedbackLabel.text + String(format:"Value: %.2f%%", currentValue)
         }
         
         if let angle = recognizer.angle {
-            feedbackLabel.text = feedbackLabel.text + "\n" + String(format:"Angle: %.2f%", angle.rad2deg)
+            feedbackLabel.text = feedbackLabel.text + "\n" + String(format:"Angle: %.2f%", angle.degrees)
         }
         
         if let distance = recognizer.distance {

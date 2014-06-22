@@ -11,9 +11,19 @@ import UIKit
 let π = Float(M_PI)
 
 extension CGFloat {
-    var rad2deg:Float {
+    var degrees:Float {
         return self * 180 / π;
     }
+    var radians:Float {
+        return self * π / 180;
+    }
+    var rad2deg:Float {
+        return self.degrees
+    }
+    var deg2rad:Float {
+        return self.radians
+    }
+
 }
 
 class XMCircleGestureRecognizer: UIGestureRecognizer {

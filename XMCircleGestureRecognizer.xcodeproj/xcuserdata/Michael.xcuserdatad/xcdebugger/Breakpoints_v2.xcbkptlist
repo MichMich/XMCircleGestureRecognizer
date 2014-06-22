@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "XMCircleGestureRecognizer/XMCircleGestureRecognizer.swift"
-            timestampString = "425073308.003438"
+            timestampString = "425121093.442421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "init(midPoint:innerRadius:outerRadius:target:action:)"
             landmarkType = "5">
          </BreakpointContent>
