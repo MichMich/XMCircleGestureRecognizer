@@ -10,29 +10,29 @@
 	<string>XMCircleGestureRecognizer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6447F823-4EF8-4808-BB8D-CA75EF8441AE</key>
+		<key>3F29A994C547B7387B89B0F0A92D515999295A70</key>
 		<string>https://github.com/MichMich/XMCircleGestureRecognizer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>XMCircleGestureRecognizer.xcodeproj/project.xcworkspace</string>
+	<string>XMCircleGestureRecognizer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6447F823-4EF8-4808-BB8D-CA75EF8441AE</key>
+		<key>3F29A994C547B7387B89B0F0A92D515999295A70</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/MichMich/XMCircleGestureRecognizer.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6447F823-4EF8-4808-BB8D-CA75EF8441AE</string>
+	<string>3F29A994C547B7387B89B0F0A92D515999295A70</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6447F823-4EF8-4808-BB8D-CA75EF8441AE</string>
+			<string>3F29A994C547B7387B89B0F0A92D515999295A70</string>
 			<key>IDESourceControlWCCName</key>
 			<string>XMCircleGestureRecognizer</string>
 		</dict>

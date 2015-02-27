@@ -85,7 +85,7 @@ public class XMCircleGestureRecognizer: UIGestureRecognizer {
     //MARK: Public Methods
     
     // designated initializer
-    public init(midPoint:CGPoint, innerRadius:CGFloat?, outerRadius:CGFloat?, target:AnyObject?, action:Selector) {
+    public init(midPoint:CGPoint, innerRadius:CGFloat?, outerRadius:CGFloat?, target:AnyObject, action:Selector) {
         super.init(target: target, action: action)
         
         self.midPoint = midPoint
@@ -95,7 +95,7 @@ public class XMCircleGestureRecognizer: UIGestureRecognizer {
     }
    
     // convinience initializer if innerRadius and OuterRadius are not necessary
-    public convenience init(midPoint:CGPoint, target:AnyObject?, action:Selector) {
+    public convenience init(midPoint:CGPoint, target:AnyObject, action:Selector) {
         self.init(midPoint:midPoint, innerRadius:nil, outerRadius:nil, target:target, action:action)
     }
     
@@ -128,7 +128,8 @@ public class XMCircleGestureRecognizer: UIGestureRecognizer {
     {
         super.touchesBegan(touches, withEvent: event)
         
-        currentPoint = touches.anyObject().locationInView(self.view)
+        let touch = touches.anyObject() as UITouch
+        currentPoint = touch.locationInView(self.view)
         
         var newState:UIGestureRecognizerState = .Began
     
@@ -156,8 +157,9 @@ public class XMCircleGestureRecognizer: UIGestureRecognizer {
             return
         }
         
-        currentPoint = touches.anyObject().locationInView(self.view)
-        previousPoint = touches.anyObject().previousLocationInView(self.view)
+        let touch = touches.anyObject() as UITouch
+        currentPoint = touch.locationInView(self.view)
+        previousPoint = touch.previousLocationInView(self.view)
         
         state = .Changed
     }

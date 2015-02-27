@@ -48,15 +48,15 @@ class ViewController: UIViewController {
         
         if let rotation = recognizer.rotation {
             currentValue += rotation.degrees / 360 * 100
-            feedbackLabel.text = feedbackLabel.text + String(format:"Value: %.2f%%", Float(currentValue))
+            feedbackLabel.text = feedbackLabel.text! + String(format:"Value: %.2f%%", Float(currentValue))
         }
         
         if let angle = recognizer.angle {
-            feedbackLabel.text = feedbackLabel.text + "\n" + String(format:"Angle: %.2f%", Float(angle.degrees))
+            feedbackLabel.text = feedbackLabel.text! + "\n" + String(format:"Angle: %.2f%", Float(angle.degrees))
         }
         
         if let distance = recognizer.distance {
-            feedbackLabel.text = feedbackLabel.text + "\n" + String(format:"Distance: %.0f%", Float(distance))
+            feedbackLabel.text = feedbackLabel.text! + "\n" + String(format:"Distance: %.0f%", Float(distance))
         }
     }
     
