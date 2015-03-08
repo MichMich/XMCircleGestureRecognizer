@@ -36,7 +36,6 @@
 		4CA4B7721954CE1400377C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA4B7731954CE1400377C13 /* XMCircleGestureRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizerTests.swift; sourceTree = "<group>"; };
 		4CA4B77D1954CE6000377C13 /* XMCircleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizer.swift; sourceTree = "<group>"; };
-		4CA4B7B71956083100377C13 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "XMCircleGestureRecognizer/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +77,6 @@
 		4CA4B75D1954CE1300377C13 /* XMCircleGestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
-				4CA4B7B71956083100377C13 /* Bridging-Header.h */,
 				4CA4B7601954CE1300377C13 /* AppDelegate.swift */,
 				4CA4B7621954CE1300377C13 /* ViewController.swift */,
 				4CA4B7641954CE1300377C13 /* Main.storyboard */,
@@ -337,7 +335,7 @@
 				INFOPLIST_FILE = XMCircleGestureRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "XMCircleGestureRecognizer/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,7 +350,7 @@
 				INFOPLIST_FILE = XMCircleGestureRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "XMCircleGestureRecognizer/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -412,6 +410,7 @@
 				4CA4B7791954CE1400377C13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CA4B77A1954CE1400377C13 /* Build configuration list for PBXNativeTarget "XMCircleGestureRecognizerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +419,7 @@
 				4CA4B77C1954CE1400377C13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
