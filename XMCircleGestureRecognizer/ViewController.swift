@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var feedbackLabel = UILabel(frame: CGRectZero)
-    var currentValue:Float = 0.0 {
+    var currentValue:CGFloat = 0.0 {
         didSet {
             if (currentValue > 100) {
                 currentValue = 100
@@ -30,15 +30,16 @@ class ViewController: UIViewController {
         self.view.addGestureRecognizer(XMCircleGestureRecognizer(midPoint: self.view.center, target: self, action: "rotateGesture:"))
         
         //add feedbackLabel
-        feedbackLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        feedbackLabel.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(feedbackLabel)
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: nil, metrics: nil, views: ["view":feedbackLabel]))
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[view]-|", options: nil, metrics: nil, views: ["view":feedbackLabel]))
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
 
         feedbackLabel.textAlignment = .Center
         feedbackLabel.numberOfLines = 0;
         feedbackLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
+        feedbackLabel.text = "Perform a gesture here."
     }
 
     
@@ -48,15 +49,15 @@ class ViewController: UIViewController {
         
         if let rotation = recognizer.rotation {
             currentValue += rotation.degrees / 360 * 100
-            feedbackLabel.text = feedbackLabel.text + String(format:"Value: %.2f%%", currentValue)
+            feedbackLabel.text = feedbackLabel.text! + String(format:"Value: %.2f%%", currentValue)
         }
         
         if let angle = recognizer.angle {
-            feedbackLabel.text = feedbackLabel.text + "\n" + String(format:"Angle: %.2f%", angle.degrees)
+            feedbackLabel.text = feedbackLabel.text! + "\n" + String(format:"Angle: %.2f%", angle.degrees)
         }
         
         if let distance = recognizer.distance {
-            feedbackLabel.text = feedbackLabel.text + "\n" + String(format:"Distance: %.0f%", distance)
+            feedbackLabel.text = feedbackLabel.text! + "\n" + String(format:"Distance: %.0f%", distance)
         }
     }
     

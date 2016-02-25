@@ -7,23 +7,24 @@
 //
 
 import UIKit
+import UIKit.UIGestureRecognizerSubclass
 
-let π = Float(M_PI)
+let π = CGFloat(M_PI)
 
 extension CGFloat {
-    var degrees:Float {
+    var degrees:CGFloat {
         return self * 180 / π;
     }
-    var radians:Float {
+    var radians:CGFloat {
         return self * π / 180;
     }
-    var rad2deg:Float {
+    var rad2deg:CGFloat {
         return self.degrees
     }
-    var deg2rad:Float {
+    var deg2rad:CGFloat {
         return self.radians
     }
-
+    
 }
 
 class XMCircleGestureRecognizer: UIGestureRecognizer {
@@ -63,7 +64,7 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
         if let nowPoint = self.currentPoint {
             return self.angleForPoint(nowPoint)
         }
-    
+        
         return nil
     }
     
@@ -72,7 +73,7 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
         if let nowPoint = self.currentPoint {
             return self.distanceBetween(self.midPoint, andPointB: nowPoint)
         }
-    
+        
         return nil
     }
     
@@ -92,7 +93,7 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
         self.innerRadius = innerRadius
         self.outerRadius = outerRadius
     }
-   
+    
     // convinience initializer if innerRadius and OuterRadius are not necessary
     convenience init(midPoint:CGPoint, target:AnyObject?, action:Selector) {
         self.init(midPoint:midPoint, innerRadius:nil, outerRadius:nil, target:target, action:action)
@@ -102,52 +103,57 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
     /* PRIVATE METHODS */
     
     func distanceBetween(pointA:CGPoint, andPointB pointB:CGPoint) -> CGFloat {
-        let dx = pointA.x - pointB.x
-        let dy = pointA.y - pointB.y
-        return sqrtf(dx*dx + dy*dy)
+        let dx = Float(pointA.x - pointB.x)
+        let dy = Float(pointA.y - pointB.y)
+        return CGFloat(sqrtf(dx*dx + dy*dy))
     }
     
     func angleForPoint(point:CGPoint) -> CGFloat {
-        var angle = -atan2f(point.x - midPoint.x, point.y - midPoint.y) + π/2
-
+        var angle = CGFloat(-atan2f(Float(point.x - midPoint.x), Float(point.y - midPoint.y))) + π/2
+        
+        
         if (angle < 0) {
             angle += π*2;
         }
         
+        
         return angle
     }
-
+    
     func angleBetween(pointA:CGPoint, andPointB pointB:CGPoint) -> CGFloat {
         return angleForPoint(pointA) - angleForPoint(pointB)
     }
     
     /* SUBCLASSED METHODS */
     
-    override func touchesBegan(touches: NSSet!, withEvent event: UIEvent!)
-    {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent) {
         super.touchesBegan(touches, withEvent: event)
         
-        currentPoint = touches.anyObject().locationInView(self.view)
-        
-        var newState:UIGestureRecognizerState = .Began
-    
-        if let innerRadius = self.innerRadius {
-            if distance < innerRadius {
-                newState = .Failed
+        if let firstTouch = touches.first {
+            
+            currentPoint = firstTouch.locationInView(self.view)
+            
+            var newState:UIGestureRecognizerState = .Began
+            
+            if let innerRadius = self.innerRadius {
+                if distance < innerRadius {
+                    newState = .Failed
+                }
             }
+            
+            if let outerRadius = self.outerRadius {
+                if distance > outerRadius {
+                    newState = .Failed
+                }
+            }
+            
+            state = newState
+            
         }
         
-        if let outerRadius = self.outerRadius {
-            if distance > outerRadius {
-                newState = .Failed
-            }
-        }
-        
-        state = newState
-
     }
-
-    override func touchesMoved(touches: NSSet!, withEvent event: UIEvent!) {
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent) {
         
         super.touchesMoved(touches, withEvent: event)
         
@@ -155,13 +161,17 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
             return
         }
         
-        currentPoint = touches.anyObject().locationInView(self.view)
-        previousPoint = touches.anyObject().previousLocationInView(self.view)
-        
-        state = .Changed
+        if let firstTouch = touches.first {
+            
+            currentPoint = firstTouch.locationInView(self.view)
+            previousPoint = firstTouch.previousLocationInView(self.view)
+            
+            state = .Changed
+            
+        }
     }
     
-    override func touchesEnded(touches: NSSet!, withEvent event: UIEvent!) {
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent) {
         super.touchesEnded(touches, withEvent: event)
         state = .Ended
         

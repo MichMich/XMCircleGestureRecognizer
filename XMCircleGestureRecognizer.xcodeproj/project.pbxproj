@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		4CA4B7611954CE1300377C13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B7601954CE1300377C13 /* AppDelegate.swift */; };
 		4CA4B7631954CE1300377C13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B7621954CE1300377C13 /* ViewController.swift */; };
-		4CA4B7661954CE1300377C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4B7641954CE1300377C13 /* Main.storyboard */; };
 		4CA4B7681954CE1300377C13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA4B7671954CE1300377C13 /* Images.xcassets */; };
-		4CA4B7741954CE1400377C13 /* XMCircleGestureRecognizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B7731954CE1400377C13 /* XMCircleGestureRecognizerTests.swift */; };
 		4CA4B77E1954CE6000377C13 /* XMCircleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA4B77D1954CE6000377C13 /* XMCircleGestureRecognizer.swift */; };
+		4CF5EF7D1C7F0CDA00B2568B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF5EF7C1C7F0CDA00B2568B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +29,10 @@
 		4CA4B75F1954CE1300377C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA4B7601954CE1300377C13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CA4B7621954CE1300377C13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4CA4B7651954CE1300377C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CA4B7671954CE1300377C13 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4CA4B76D1954CE1400377C13 /* XMCircleGestureRecognizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMCircleGestureRecognizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CA4B7721954CE1400377C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CA4B7731954CE1400377C13 /* XMCircleGestureRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizerTests.swift; sourceTree = "<group>"; };
 		4CA4B77D1954CE6000377C13 /* XMCircleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizer.swift; sourceTree = "<group>"; };
-		4CA4B7B71956083100377C13 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "XMCircleGestureRecognizer/Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		4CF5EF7C1C7F0CDA00B2568B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				4CA4B75D1954CE1300377C13 /* XMCircleGestureRecognizer */,
-				4CA4B7701954CE1400377C13 /* XMCircleGestureRecognizerTests */,
 				4CA4B75C1954CE1300377C13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,11 +73,10 @@
 		4CA4B75D1954CE1300377C13 /* XMCircleGestureRecognizer */ = {
 			isa = PBXGroup;
 			children = (
-				4CA4B7B71956083100377C13 /* Bridging-Header.h */,
 				4CA4B7601954CE1300377C13 /* AppDelegate.swift */,
 				4CA4B7621954CE1300377C13 /* ViewController.swift */,
-				4CA4B7641954CE1300377C13 /* Main.storyboard */,
 				4CA4B7671954CE1300377C13 /* Images.xcassets */,
+				4CF5EF7C1C7F0CDA00B2568B /* Main.storyboard */,
 				4CA4B75E1954CE1300377C13 /* Supporting Files */,
 				4CA4B77D1954CE6000377C13 /* XMCircleGestureRecognizer.swift */,
 			);
@@ -93,23 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				4CA4B75F1954CE1300377C13 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4CA4B7701954CE1400377C13 /* XMCircleGestureRecognizerTests */ = {
-			isa = PBXGroup;
-			children = (
-				4CA4B7731954CE1400377C13 /* XMCircleGestureRecognizerTests.swift */,
-				4CA4B7711954CE1400377C13 /* Supporting Files */,
-			);
-			path = XMCircleGestureRecognizerTests;
-			sourceTree = "<group>";
-		};
-		4CA4B7711954CE1400377C13 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4CA4B7721954CE1400377C13 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,7 +135,9 @@
 		4CA4B7531954CE1300377C13 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Michael Teeuw";
 				TargetAttributes = {
 					4CA4B75A1954CE1300377C13 = {
@@ -194,8 +173,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA4B7661954CE1300377C13 /* Main.storyboard in Resources */,
 				4CA4B7681954CE1300377C13 /* Images.xcassets in Resources */,
+				4CF5EF7D1C7F0CDA00B2568B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CA4B7741954CE1400377C13 /* XMCircleGestureRecognizerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,17 +214,6 @@
 			targetProxy = 4CA4B76E1954CE1400377C13 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4CA4B7641954CE1300377C13 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CA4B7651954CE1300377C13 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4CA4B7751954CE1400377C13 /* Debug */ = {
@@ -269,6 +236,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -332,12 +300,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XMCircleGestureRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.xonaymedia.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "XMCircleGestureRecognizer/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -347,12 +314,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = XMCircleGestureRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.xonaymedia.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "XMCircleGestureRecognizer/Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -372,6 +338,7 @@
 				INFOPLIST_FILE = XMCircleGestureRecognizerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.xonaymedia.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -388,6 +355,7 @@
 				INFOPLIST_FILE = XMCircleGestureRecognizerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.xonaymedia.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -412,6 +380,7 @@
 				4CA4B7791954CE1400377C13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CA4B77A1954CE1400377C13 /* Build configuration list for PBXNativeTarget "XMCircleGestureRecognizerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +389,7 @@
 				4CA4B77C1954CE1400377C13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
