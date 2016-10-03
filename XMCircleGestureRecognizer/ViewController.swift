@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var feedbackLabel = UILabel(frame: CGRectZero)
+    var feedbackLabel = UILabel(frame: CGRect.zero)
     var currentValue:CGFloat = 0.0 {
         didSet {
             if (currentValue > 100) {
@@ -27,16 +27,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //add gesture recognizer
-        self.view.addGestureRecognizer(XMCircleGestureRecognizer(midPoint: self.view.center, target: self, action: "rotateGesture:"))
+        self.view.addGestureRecognizer(XMCircleGestureRecognizer(midPoint: self.view.center, target: self, action: #selector(ViewController.rotateGesture(recognizer:))))
         
         //add feedbackLabel
         feedbackLabel.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(feedbackLabel)
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
+        view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
 
-        feedbackLabel.textAlignment = .Center
+        feedbackLabel.textAlignment = .center
         feedbackLabel.numberOfLines = 0;
         feedbackLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
         feedbackLabel.text = "Perform a gesture here."
