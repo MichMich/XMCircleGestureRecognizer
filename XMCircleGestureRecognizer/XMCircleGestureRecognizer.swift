@@ -32,7 +32,7 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
     /* PUBLIC VARS */
     
     // midpoint for gesture recognizer
-    var midPoint = CGPointZero
+    var midPoint = CGPoint.zero
     
     // minimal distance from midpoint
     var innerRadius:CGFloat?
@@ -44,7 +44,7 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
     var rotation:CGFloat? {
         if let currentPoint = self.currentPoint {
             if let previousPoint = self.previousPoint {
-                var rotation = angleBetween(currentPoint, andPointB: previousPoint)
+                var rotation = angleBetween(pointA: currentPoint, andPointB: previousPoint)
                 
                 if (rotation > π) {
                     rotation -= π*2
@@ -62,7 +62,7 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
     // absolute angle for current gesture (in radians)
     var angle:CGFloat? {
         if let nowPoint = self.currentPoint {
-            return self.angleForPoint(nowPoint)
+            return self.angleForPoint(point: nowPoint)
         }
         
         return nil
@@ -71,7 +71,7 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
     // distance from midpoint
     var distance:CGFloat? {
         if let nowPoint = self.currentPoint {
-            return self.distanceBetween(self.midPoint, andPointB: nowPoint)
+            return self.distanceBetween(pointA: self.midPoint, andPointB: nowPoint)
         }
         
         return nil
@@ -121,29 +121,29 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
     }
     
     func angleBetween(pointA:CGPoint, andPointB pointB:CGPoint) -> CGFloat {
-        return angleForPoint(pointA) - angleForPoint(pointB)
+        return angleForPoint(point: pointA) - angleForPoint(point: pointB)
     }
     
     /* SUBCLASSED METHODS */
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent) {
-        super.touchesBegan(touches, withEvent: event)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+        super.touchesBegan(touches, with: event)
         
         if let firstTouch = touches.first {
             
-            currentPoint = firstTouch.locationInView(self.view)
+            currentPoint = firstTouch.location(in: self.view)
             
-            var newState:UIGestureRecognizerState = .Began
+            var newState:UIGestureRecognizerState = .began
             
-            if let innerRadius = self.innerRadius {
+            if let innerRadius = self.innerRadius, let distance = self.distance {
                 if distance < innerRadius {
-                    newState = .Failed
+                    newState = .failed
                 }
             }
             
-            if let outerRadius = self.outerRadius {
+            if let outerRadius = self.outerRadius, let distance = self.distance {
                 if distance > outerRadius {
-                    newState = .Failed
+                    newState = .failed
                 }
             }
             
@@ -153,27 +153,27 @@ class XMCircleGestureRecognizer: UIGestureRecognizer {
         
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent) {
         
-        super.touchesMoved(touches, withEvent: event)
+        super.touchesMoved(touches, with: event)
         
-        if state == .Failed {
+        if state == .failed {
             return
         }
         
         if let firstTouch = touches.first {
             
-            currentPoint = firstTouch.locationInView(self.view)
-            previousPoint = firstTouch.previousLocationInView(self.view)
+            currentPoint = firstTouch.location(in: self.view)
+            previousPoint = firstTouch.previousLocation(in: self.view)
             
-            state = .Changed
+            state = .changed
             
         }
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent) {
-        super.touchesEnded(touches, withEvent: event)
-        state = .Ended
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent) {
+        super.touchesEnded(touches, with: event)
+        state = .ended
         
         currentPoint = nil
         previousPoint = nil
